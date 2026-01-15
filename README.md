@@ -1,48 +1,32 @@
-# Post Office Queue Simulation
+# Post office queue management simulator
 
-This project is a simulation developed for a laboratory assignment in the Simulation course.
+Computer simulation of service queues to analyze waiting times and resource utilization.
 
-## Description
+### Main idea:
+Evaluate the behavior of a real system using mathematical models and simulation.
 
-The simulation models a post office in Córdoba with two service types:
 
-- **Package Shipping**: Served by two employees (10 clients/hour each).
-- **Claims and Returns**: Served by one employee (7 clients/hour).
+### Technologies used:
+- Python + FastAPI
+- Pydantic
+- Uvicorn
+- Pandas
+- React
+- JavaScript
+- Bootstrap
 
-Clients arrive following exponential distributions:
-- 25 clients/hour for Package Shipping.
-- 15 clients/hour for Claims and Returns.
+  
+### Architectural aspects:
+- REST API-based backend
+- Separation between simulation logic and API
+- Independent frontend connected via HTTP
+- SPA architecture in React
+- Separate frontend and backend structure
+- Integrated discrete and continuous simulation models
 
-Each server can be an **expert** or an **apprentice**, which affects service speed (configurable). A continuous-time component is included using the equation:
 
-```
-dR/dt = C + 0.2 * T + t²
-```
 
-Where:
-- `C` is the number of people in the queue,
-- `T` is the total service time,
-- `t` is the simulation time.
 
-## Features
 
-- Configurable parameters (arrival/service rates, server types).
-- Run N simulation lines (e.g. 1000, 10,000, etc.).
-- View any 300-line segment from the simulation.
-- Display state headers and final state.
-- Continuous model calculation integrated per simulation row.
-- Outputs include average waiting time and server utilization.
-
-## Objectives
-
-- Measure wait times and occupation for each service.
-- Analyze the impact of server absences.
-- Apply a continuous model within a discrete simulation.
-
-## Photos
-
-![Screenshot 1](assets/p1.png)
-![Screenshot 2](assets/p2.png)
-![Screenshot 3](assets/rk.png)
 
 
