@@ -14,6 +14,7 @@ Evaluate the behavior of a real system using mathematical models and simulation.
 - React
 - JavaScript
 - Bootstrap
+- Pandas
 
   
 ### Architectural aspects:
